@@ -92,7 +92,9 @@ class Task extends Component {
                         className={`outline-0 border py-2 px-4 rounded w-[70%] ${this.state.typingStatus ? 'border-green-500': 'border-gray-600'}`}
                         placeholder='Задачи'
                         onChange={this.showInput}/>
-                    <button className="ml-2 py-2 px-4 bg-red-600 text-white rounded-2xl" onClick={this.addNewComment}>Добавить новую задачу</button>
+                    <button
+                        className="ml-2 py-2 px-4 bg-red-600 text-white rounded-2xl"
+                        onClick={this.addNewComment}>Добавить новую задачу</button>
                     {!comments.length ? <p>Нету задач</p> : this.renderComments()}
                 </div>
             </div>
